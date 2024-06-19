@@ -8,6 +8,6 @@ import icon from "astro-icon";
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
+  site: "https://suiwin.soluty.cc",
   integrations: [tailwind(), mdx(), sitemap(), icon()],
 });
