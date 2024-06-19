@@ -6,59 +6,38 @@ import PricingCard from "@components/pricing.astro";
 
 const pricing = [
   {
-    name: "Personal",
-    price: "Free",
+    name: "基础版",
+    price: "免费",
     popular: false,
     features: [
-      "Lifetime free",
-      "Up to 3 users",
-      "Unlimited Pages",
-      "Astro Sub domain",
-      "Basic Integrations",
-      "Community Support",
+      "急速直达软件",
+      "支持托盘区的软件",
+      "支持进入软件中的某个窗口",
+      "支持结合komorebi使用",
+      "支持自定义快捷键",
     ],
     button: {
-      text: "Get Started",
+      text: "免费下载",
       link: "/",
     },
   },
   {
-    name: "Startup",
+    name: "专业版",
     price: {
-      monthly: "$19",
-      annual: "$16",
-      discount: "10%",
-      original: "$24",
+      monthly: "￥5",
+      original: "￥10",
     },
     popular: true,
     features: [
-      "All Free Features",
-      "Up to 20 users",
-      "20 Custom domains",
-      "Unlimited Collaborators",
-      "Advanced Integrations",
-      "Priority Support",
+      "所有免费的功能",
+      "支持命令行调用",
+      "预定义的app模版",
+      "可指定预定义模版外的app",
+      "无订阅提示",
     ],
     button: {
-      text: "Get Started",
+      text: "支持一下",
       link: "#",
-    },
-  },
-  {
-    name: "Enterprise",
-    price: "Custom",
-    popular: false,
-    features: [
-      "All Pro Features",
-      "Unlimited Custom domains",
-      "99.99% Uptime SLA",
-      "SAML & SSO Integration",
-      "Dedicated Account Manager",
-      "24/7 Phone Support",
-    ],
-    button: {
-      text: "Contact us",
-      link: "/contact",
     },
   },
 ];
@@ -67,13 +46,13 @@ const pricing = [
 <Layout title="Pricing">
   <Container>
     <Sectionhead>
-      <Fragment slot="title">Pricing</Fragment>
+      <Fragment slot="title">价格</Fragment>
       <Fragment slot="desc">
-        Simple & Predictable pricing. No Surprises.
+        如无特殊需求, 免费版可以使用软件几乎全部功能
       </Fragment>
     </Sectionhead>
 
-    <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
+    <div class="grid md:grid-cols-2 gap-10 mx-auto max-w-screen-lg mt-12">
       {pricing.map((item) => <PricingCard plan={item} />)}
     </div>
   </Container>
