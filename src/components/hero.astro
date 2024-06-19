@@ -6,30 +6,25 @@ import { Icon } from "astro-icon/components";
 ---
 
 <main
-  class="grid lg:grid-cols-2 place-items-center pt-16 pb-8 md:pt-12 md:pb-24">
-  <div class="py-6 md:order-1 hidden md:block">
-    <Picture
-      src={heroImage}
-      alt="Astronaut in the air"
-      widths={[200, 400, 600]}
-      sizes="(max-width: 800px) 100vw, 620px"
-      loading="eager"
-      format="avif"
-    />
-  </div>
+  class="grid lg:grid-cols-2 pt-16 pb-8 md:pt-12 md:pb-24">
+    <div class="order-1 pt-0 pb-0">
+      <iframe src="//player.bilibili.com/player.html?aid=781103653&bvid=BV1q24y1u7Qw&cid=1054422917&page=1&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="width: 100%;height: 100%;"> </iframe>
+    </div>
+  <!-- <div class="py-6 md:order-1 hidden md:block"> -->
+  <!-- </div> -->
   <div>
     <h1
       class="text-5xl lg:text-6xl xl:text-7xl font-bold lg:tracking-tight xl:tracking-tighter">
-      在程序中跳舞
+      在软件中跳舞
     </h1>
     <p class="text-lg mt-4 text-slate-600 max-w-xl">
-   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当你在电脑打开了一大堆窗口, 而你这个时候想要切换到某个程序是, 你是否厌倦了用鼠标在下面慢慢寻找, 亦或是
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 当你在电脑打开了一大堆窗口, 而你这个时候想要切换到某个软件是, 你是否厌倦了用鼠标在下面慢慢寻找, 亦或是
       通过<em>alt+tab</em>一个一个窗口的来看, 肉眼来寻找要去哪里, 如果是这样, 这个工具就是为你准备的.
   <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      suiwin是一个特别的程序切换工具, 它基于 <a href="https://github.com/shortcutui/sui"> <b>sui</b> </a> 的理念而创造, 不同于其它类似的启动器产品以搜索来启动某个程序,
-    它是通过您给程序指定一个名字或者快捷键假如说是a, 然后你就可以通过 <em>(ctrl+w a)</em> 来启动它了, 并且该程序启动
-      以后, 在没关闭之前, 你还可以通过同样的快捷键 <em>(ctrl+w a)</em> 来迅速的切换回程序.
+      suiwin是一个快速切换软件的工具, 它基于 <a href="https://github.com/shortcutui/sui"> <b>sui</b> </a> 的理念而创造, 不同于其它类似的启动器产品以搜索来启动某个软件,
+    它是通过您给软件指定一个名字或者快捷键假如说是a, 然后你就可以通过 <em>(ctrl+w a)</em> 来启动它了, 并且该软件启动
+      以后, 在没关闭之前, 你还可以通过同样的快捷键 <em>(ctrl+w a)</em> 来迅速的切换回软件.
     </p>
     <div class="mt-6 flex flex-col sm:flex-row gap-3">
       <Link
